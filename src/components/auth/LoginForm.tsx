@@ -31,7 +31,7 @@ export const LoginForm = () => {
         }
         return errors;
       }}
-      onSubmit={(values, {setSubmitting, resetForm}) => {
+      onSubmit={(values, {setSubmitting}) => {
         setUser(values)
         setSubmitting(true);
       }}

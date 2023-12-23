@@ -26,7 +26,7 @@ export const Posts: FC<PostsComponentProps> = ({ posts }) => {
 
   useEffect(() => {
     if (!isAuth) router.push('/auth');
-  }, [])
+  }, [isAuth])
 
   return (
     <main className={styles.posts}>

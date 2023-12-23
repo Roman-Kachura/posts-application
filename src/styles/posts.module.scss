@@ -1,0 +1,88 @@
+.posts {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 60px;
+}
+
+.postsList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.postsListItem {
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    color: #06c;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 40px 0 #fcc;
+    }
+  }
+}
+
+.postsListItemTitle {
+  font-size: 2.1rem;
+  line-height: 1em;
+  color: #c60;
+}
+
+.post{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 50px;
+}
+
+.postsLink{
+  align-self: flex-start;
+  margin: auto 0;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 5px;
+  background: #c4c4c4;
+  color: #06c;
+}
+
+.postContent{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.postContentBody{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.postContentAuthor{
+  color: #06c;
+}

@@ -1,0 +1,44 @@
+.comments{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.commentsList{
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.commentsListItem{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.commentsListItemTitle{
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  color: #c60;
+}
+
+.commentsListItemBody{
+  width: 70%;
+  line-height: 1.2em;
+}
+
+.commentsListItemEmail{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #06c;
+}

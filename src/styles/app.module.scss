@@ -1,0 +1,50 @@
+.title{
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.app{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px;
+}
+
+.appLink{
+  padding: 20px 40px;
+  background: #06c;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  transition: .3s all;
+
+  &:hover{
+    color: #c4c4c4;
+    box-shadow: 0 5px 0 0 #024993;
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.paginationBtn{
+  background: #fff;
+  color: #06c;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: none;
+  transition: .3s;
+
+  &.active{
+    background: #06c;
+    color: #fff;
+  }
+}

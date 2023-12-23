@@ -31,7 +31,7 @@ export const LoginForm = () => {
         }
         return errors;
       }}
-      onSubmit={(values, {setSubmitting}) => {
+      onSubmit={(values, { setSubmitting }) => {
         setUser(values)
         setSubmitting(true);
       }}
@@ -46,7 +46,10 @@ export const LoginForm = () => {
           isSubmitting,
         }) => {
         return (
-          <form className={styles.loginForm} onSubmit={handleSubmit}>
+          <form className={styles.loginForm} onSubmit={(e) => {
+            e.preventDefault();
+            handleSubmit();
+          }}>
             <AuthField
               id={'email'}
               type={'email'}

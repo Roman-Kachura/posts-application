@@ -24,9 +24,9 @@ export const Posts: FC<PostsComponentProps> = ({ posts }) => {
   const currentPosts = getCurrentPosts(postsCurrentPage, postsPerPage, posts);
   console.log(isAuth)
 
-  // useEffect(() => {
-  //   if (!isAuth) router.push('/auth');
-  // }, [isAuth])
+  useEffect(() => {
+    if (!isAuth) router.push('/auth');
+  }, [isAuth])
 
   return (
     <main className={styles.posts}>

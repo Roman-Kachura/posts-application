@@ -22,11 +22,10 @@ export const Posts: FC<PostsComponentProps> = ({ posts }) => {
   const postsPerPage = 8;
   const totalPostsPage = Math.ceil(posts.length / postsPerPage);
   const currentPosts = getCurrentPosts(postsCurrentPage, postsPerPage, posts);
-  console.log(isAuth)
 
-  useEffect(() => {
-    if (!isAuth) router.push('/auth');
-  }, [isAuth])
+  // useEffect(() => {
+  //   if (!isAuth) router.push('/auth');
+  // }, [isAuth])
 
   return (
     <main className={styles.posts}>

@@ -17,7 +17,7 @@ export const Pagination: FC<PaginationProps> = ({ currentPage, totalPage, change
       {pages.map(p => {
         const className = p === currentPage ? `${styles.paginationBtn} ${styles.active}` : styles.paginationBtn;
         return(
-          <li>
+          <li key={p}>
             <button className={className} onClick={() => changePage(p)}>{p}</button>
           </li>
         )
